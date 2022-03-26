@@ -35,7 +35,7 @@
 
 ## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/10_DikayaAV_unit13/"> job </a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/10_DikayaAV_unit13/"><img src="images/screens/Screenshot_522.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"><img src="images/screens/Jenkins.png" alt="Jenkins"/></a>
 </p>
 
 ### :maple_leaf: Параметры сборки в Jenkins:
@@ -62,35 +62,35 @@ test
 -Durl=${REMOTE_URL}
 ```
 
-## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/10_DikayaAV_unit13/allure/">Allure report</a>
+## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/allure/">Allure report</a>
 
 ### :lady_beetle: Основное окно
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/Screenshot_523.png">
+<img title="Allure Overview Dashboard" src="images/screens/Allure_Report3.png">
 </p>
 
 ### :cherries: Тесты
 
 <p align="center">
-<img title="Allure Tests" src="images/screens/Screenshot_524.png">
+<img title="Allure Tests" src="images/screens/Allure_Report4.png">
 </p>
 
 ### :cut_of_meat: Графики
 
 <p align="center">
-<img title="Allure Graphics" src="images/screens/Screenshot_525.png">
+<img title="Allure Graphics" src="images/screens/Allure_Report2.png">
 </p>
 
 ## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/Screenshot_528.png" >
+<img title="Allure Overview Dashboard" src="images/screens/Telegram.png" >
 </p>
 
 
 ## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Allure"/></a> Видео прохождения теста
 
 <p align="center">
-<img title="Selenoid Video" src="images/gif/видео.gif" width="250" height="153"  alt="video"> 
+<img title="Selenoid Video" src="images/gif/test.gif" width="250" height="153"  alt="video"> 
 </p>
