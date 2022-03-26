@@ -21,7 +21,7 @@ public class VeeamPOStepsTests extends TestBase {
             language = "English",
             languageShort = "EN";
 
-    /*@Test
+    @Test
     @DisplayName("Смена языка с русского на " + language)
     void changeLanguageTest() {
         pageObject.changeLanguage(language)
@@ -40,7 +40,7 @@ public class VeeamPOStepsTests extends TestBase {
     @DisplayName("Заполнение Запроса в отдел продаж")
     void fillFormTest() {
         pageObject.fillForm(firstName, lastName, email, phone, company, details);
-    }*/
+    }
 
 }
 

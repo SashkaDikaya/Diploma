@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class VeeamLambdaStepsTests extends TestBase {
 
-   /* @ValueSource(strings = {"Biocad", "Exchange"})
+    @ValueSource(strings = {"Biocad", "Exchange"})
     @ParameterizedTest(name = "Открытие статьи о : {0}")
     void checkSuccessStoryTest(String customer) {
         step("Открытие главной страницы сайта Veeam", () -> {
@@ -44,7 +44,7 @@ public class VeeamLambdaStepsTests extends TestBase {
         step("Проверка наличия информации в статье о " + customer, () -> {
             $x("//*").shouldHave(text(customer));
         });
-    }*/
+    }
 
     @Test
     @DisplayName("Поиск информации о компании Biocad в скачанном PDF файле")
