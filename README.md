@@ -1,6 +1,10 @@
 # Проект по автоматизации тестирования для Veeam
 <a target="_blank" href="https://www.veeam.com/ru/">Веб сайт Veeam</a>
 
+<p align="center">
+<img title="Allure Graphics" src="images/screens/Veeam.png">
+</p>
+
 ## :drop_of_blood: Содержание:
 
 - [Технологии и инструменты](#earth_africa-технологии-и-инструменты)
