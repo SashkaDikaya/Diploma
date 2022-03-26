@@ -33,7 +33,7 @@
 - ✓ Смена языка с русского на английский
 - ✓ Заполнение Запроса в отдел продаж
 
-## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/10_DikayaAV_unit13/"> job </a>
+## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"> job </a>
 <p align="center">
 <a href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"><img src="images/screens/Jenkins.png" alt="Jenkins"/></a>
 </p>
