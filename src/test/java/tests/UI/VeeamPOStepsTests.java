@@ -12,7 +12,7 @@ public class VeeamPOStepsTests extends TestBase {
     @Test
     @DisplayName("Поиск вакансии " + phrase)
     void findVacancyTest() {
-        career.selectCzechia()
+        pageObject.selectCzechia()
                 .findVacancy(phrase)
                 .checkVacancy(phrase);
     }
@@ -24,7 +24,7 @@ public class VeeamPOStepsTests extends TestBase {
     @Test
     @DisplayName("Смена языка с русского на " + language)
     void changeLanguageTest() {
-        career.changeLanguage(language)
+        pageObject.changeLanguage(language)
                 .checkLanguage(languageShort);
     }
 
@@ -39,7 +39,7 @@ public class VeeamPOStepsTests extends TestBase {
     @Test
     @DisplayName("Заполнение Запроса в отдел продаж")
     void fillFormTest() {
-        career.fillForm(firstName, lastName, email, phone, company, details);
+        pageObject.fillForm(firstName, lastName, email, phone, company, details);
     }
 
 }

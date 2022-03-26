@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 public class TestBase {
 
     static Faker faker = new Faker();
-    PageObject career = new PageObject();
+    PageObject pageObject = new PageObject();
 
     @BeforeAll
     static void setUp() {
