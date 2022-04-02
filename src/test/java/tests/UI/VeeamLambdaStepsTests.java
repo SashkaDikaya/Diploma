@@ -2,6 +2,8 @@ package tests.UI;
 
 import com.codeborne.pdftest.PDF;
 import com.codeborne.selenide.Selenide;
+import io.qameta.allure.AllureId;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -19,6 +21,7 @@ public class VeeamLambdaStepsTests extends TestBase {
 
     @ValueSource(strings = {"Biocad", "Exchange"})
     @ParameterizedTest(name = "Открытие статьи о : {0}")
+    @AllureId("8170")
     void checkSuccessStoryTest(String customer) {
         step("Открытие главной страницы сайта Veeam", () -> {
             Selenide.open("https://www.veeam.com/ru");
@@ -47,6 +50,7 @@ public class VeeamLambdaStepsTests extends TestBase {
     }
 
     @Test
+    @AllureId("8171")
     @DisplayName("Поиск информации о компании Biocad в скачанном PDF файле")
     void checkPdfTest() throws Exception {
         step("Поиск информации о компании Biocad в скачанном PDF файле", () -> {
@@ -57,6 +61,8 @@ public class VeeamLambdaStepsTests extends TestBase {
 
         });
     }
+
+
 }
 
 
