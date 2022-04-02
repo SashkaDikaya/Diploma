@@ -16,12 +16,12 @@ import static com.codeborne.selenide.Selenide.$x;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 public class VeeamLambdaStepsTests extends TestBase {
 
     @ValueSource(strings = {"Biocad", "Exchange"})
     @ParameterizedTest(name = "Открытие статьи о : {0}")
     @AllureId("8170")
+
     void checkSuccessStoryTest(String customer) {
         step("Открытие главной страницы сайта Veeam", () -> {
             Selenide.open("https://www.veeam.com/ru");
@@ -57,6 +57,7 @@ public class VeeamLambdaStepsTests extends TestBase {
             Selenide.open("https://www.veeam.com/ru/success-stories/Biocad.html");
             File downloadedPdfFile = $x("//span[contains(text(), 'Скачать PDF')]/..").download();
             PDF parsed = new PDF(downloadedPdfFile);
+
             assertThat(parsed.title).contains("Veeam", "Biocad");
 
         });

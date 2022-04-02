@@ -1,5 +1,6 @@
 package tests.UI;
 
+import io.qameta.allure.AllureId;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -10,6 +11,7 @@ public class VeeamPOStepsTests extends TestBase {
             phrase = "QA Automation";
 
     @Test
+    @AllureId("8172")
     @DisplayName("Поиск вакансии " + phrase)
     void findVacancyTest() {
         pageObject.selectCzechia()
@@ -22,6 +24,7 @@ public class VeeamPOStepsTests extends TestBase {
             languageShort = "EN";
 
     @Test
+    @AllureId("8175")
     @DisplayName("Смена языка с русского на " + language)
     void changeLanguageTest() {
         pageObject.changeLanguage(language)
@@ -37,6 +40,7 @@ public class VeeamPOStepsTests extends TestBase {
             details = faker.elderScrolls().quote();
 
     @Test
+    @AllureId("8176")
     @DisplayName("Заполнение Запроса в отдел продаж")
     void fillFormTest() {
         pageObject.fillForm(firstName, lastName, email, phone, company, details);
