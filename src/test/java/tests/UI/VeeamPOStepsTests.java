@@ -10,6 +10,7 @@ public class VeeamPOStepsTests extends TestBase {
     final String
             phrase = "QA Automation";
 
+
     @Test
     @AllureId("8172")
     @DisplayName("Поиск вакансии " + phrase)

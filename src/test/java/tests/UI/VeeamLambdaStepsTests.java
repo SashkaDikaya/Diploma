@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class VeeamLambdaStepsTests extends TestBase {
 
-    @ValueSource(strings = {"Biocad", "Exchange"})
+    @ValueSource(strings = {"Biocad", "Exchange", " ВСК", "Exchange"})
     @ParameterizedTest(name = "Открытие статьи о : {0}")
     @AllureId("8170")
 

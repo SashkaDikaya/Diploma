@@ -12,6 +12,7 @@
 - [Сборка в Jenkins](#earth_africa-Jenkins-job)
 - [Запуск из терминала](#earth_africa-Запуск-тестов-из-терминала)
 - [Allure отчет](#earth_africa-Allure-отчет)
+- [Тест-кесы в Allure Testops](#earth_africa-Тест-кесы-в-Allure-Testops)
 - [Отчет в Telegram](#earth_africa-Уведомление-в-Telegram-при-помощи-бота)
 - [Видео примеры прохождения тестов](#earth_africa-Примеры-видео-о-прохождении-тестов)
 
@@ -27,6 +28,7 @@
 <a href="https://aerokube.com/selenoid/"><img src="images/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
 <a href="https://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a>
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
+<a href="https://qameta.io/"><img src="images/logo/Allure_TO.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
 ## :boom: Реализованные проверки
@@ -84,6 +86,16 @@ test
 
 <p align="center">
 <img title="Allure Graphics" src="images/screens/Allure_Report2.png">
+</p>
+
+## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Тест-кесы  <a target="_blank" href="https://allure.autotests.cloud/project/1176/dashboards">в Allure Testop</a>
+
+<p align="center">
+<img title="Allure Graphics" src="images/screens/Allure_TO.png">
+</p>
+
+<p align="center">
+<img title="Allure Graphics" src="images/screens/Allure_TO2.png">
 </p>
 
 ## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
