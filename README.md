@@ -39,9 +39,31 @@
 - ✓ Смена языка с русского на английский
 - ✓ Заполнение Запроса в отдел продаж
 
-## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"> job </a>
+## :boom: Запуск тестов
+
+### Локальный запуск :
+```
+gradle clean test
+```
+
+### Удаленный запуск:
+```
+clean
+test
+-Dbrowser=${BROWSER}
+-Dversion=${VERSION}
+-Dsize=${BROWSER_SIZE}
+-Durl=${REMOTE_URL}
+```
+
+### <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Запуск через  <a target="_blank" href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"> Jenkins </a>
+
 <p align="center">
 <a href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"><img src="images/screens/Jenkins.png" alt="Jenkins"/></a>
+</p>
+
+<p align="center">
+<a href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"><img src="images/screens/Jenkins2.png" alt="Jenkins"/></a>
 </p>
 
 ### :maple_leaf: Параметры сборки в Jenkins:
@@ -51,22 +73,10 @@
 - size (размер окна браузера, по умолчанию 1920x1080)
 - remoteUrl (логин, пароль и адрес удаленного сервера selenoid)
 
-## :japanese_ogre: Запуск тестов из терминала
 
-Локальный запуск:
-```
-gradle clean test
-```
 
-Удаленный запуск:
-```
-clean
-test
--Dbrowser=${BROWSER}
--Dversion=${VERSION}
--Dsize=${BROWSER_SIZE}
--Durl=${REMOTE_URL}
-```
+
+
 
 ## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/allure/">Allure report</a>
 
