@@ -58,14 +58,6 @@ test
 
 ### <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Запуск через  <a target="_blank" href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"> Jenkins </a>
 
-<p align="center">
-<a href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"><img src="images/screens/Jenkins.png" alt="Jenkins"/></a>
-</p>
-
-<p align="center">
-<a href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"><img src="images/screens/Jenkins2.png" alt="Jenkins"/></a>
-</p>
-
 ### :maple_leaf: Параметры сборки в Jenkins:
 
 - browser (браузер, по умолчанию chrome)
@@ -73,8 +65,13 @@ test
 - size (размер окна браузера, по умолчанию 1920x1080)
 - remoteUrl (логин, пароль и адрес удаленного сервера selenoid)
 
+<p align="center">
+<a href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"><img src="images/screens/Jenkins.png" alt="Jenkins"/></a>
+</p>
 
-
+<p align="center">
+<a href="https://jenkins.autotests.cloud/job/10_DikayaAV_diploma/"><img src="images/screens/Jenkins3.png" alt="Jenkins"/></a>
+</p>
 
 
 
