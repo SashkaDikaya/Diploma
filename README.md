@@ -90,17 +90,17 @@ test
 
 ## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Отчеты <a target="_blank" href="https://allure.autotests.cloud/project/1176/dashboards">в Allure Testops</a>
 
-### :cut_of_meat: Дашборд
+### :lobster: Дашборд
 <p align="center">
 <img title="Allure Graphics" src="images/screens/Allure_TO.png">
 </p>
 
-### :cut_of_meat: Тест-кейсы
+### :broken_heart: Тест-кейсы
 <p align="center">
 <img title="Allure Graphics" src="images/screens/Allure_TO2.png">
 </p>
 
-### :cut_of_meat: Запуски
+### :japanese_goblin: Запуски
 <p align="center">
 <img title="Allure Graphics" src="images/screens/Allure_TO3.png">
 </p>
