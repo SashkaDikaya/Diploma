@@ -88,14 +88,21 @@ test
 <img title="Allure Graphics" src="images/screens/Allure_Report2.png">
 </p>
 
-## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Тест-кесы  <a target="_blank" href="https://allure.autotests.cloud/project/1176/dashboards">в Allure Testop</a>
+## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Отчеты <a target="_blank" href="https://allure.autotests.cloud/project/1176/dashboards">в Allure Testops</a>
 
+### :cut_of_meat: Дашборд
 <p align="center">
 <img title="Allure Graphics" src="images/screens/Allure_TO.png">
 </p>
 
+### :cut_of_meat: Тест-кейсы
 <p align="center">
 <img title="Allure Graphics" src="images/screens/Allure_TO2.png">
+</p>
+
+### :cut_of_meat: Запуски
+<p align="center">
+<img title="Allure Graphics" src="images/screens/Allure_TO3.png">
 </p>
 
 ## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
