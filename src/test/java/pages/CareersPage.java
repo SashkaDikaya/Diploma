@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class CareersPage  {
+public class CareersPage {
     CredentialConfig credentials = ConfigFactory.create(CredentialConfig.class);
 
     SelenideElement

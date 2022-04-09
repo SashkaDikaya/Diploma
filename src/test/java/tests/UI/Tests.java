@@ -40,7 +40,7 @@ public class Tests extends TestBase {
                 .checkVacancy(phrase);
     }
 
-    /*@Test
+    @Test
     @AllureId("8175")
     @DisplayName("Смена языка с русского на " + language)
     void changeLanguageTest() {
@@ -53,6 +53,10 @@ public class Tests extends TestBase {
     @DisplayName("Заполнение Запроса в отдел продаж")
     void fillFormTest() {
         salesPage.fillForm(firstName, lastName, email, phone, company, details);
+
+        //код ниже закомментирован чтобы не отправлять тестовые запросы на боевом проекте
+        //salesPage.sendRequest()
+                //.requestCheck();
     }
 
     @ValueSource(strings = {"Biocad", "Exchange", " ВСК", "Exchange"})
@@ -60,7 +64,7 @@ public class Tests extends TestBase {
     @AllureId("8170")
     void checkSuccessStoryTest(String customer) {
         step("Открытие главной страницы сайта Veeam", () ->
-                open("https://www.veeam.com/ru"));
+                open(credentials.mainPageUrl()));
 
         step("Открытие историй успеха заказчиков", () ->
                 $x("//a[text()='Истории успеха заказчиков']").click());
@@ -85,11 +89,11 @@ public class Tests extends TestBase {
     @DisplayName("Поиск информации о компании Biocad в скачанном PDF файле")
     void checkPdfTest() throws Exception {
         step("Поиск информации о компании Biocad в скачанном PDF файле", () -> {
-            open("https://www.veeam.com/ru/success-stories/Biocad.html");
+            open(credentials.mainPageUrl() + "success-stories/Biocad.html");
             File downloadedPdfFile = $x("//span[contains(text(), 'Скачать PDF')]/..").download();
             PDF parsed = new PDF(downloadedPdfFile);
 
             assertThat(parsed.title).contains("Veeam", "Biocad");
         });
-    }*/
+    }
 }

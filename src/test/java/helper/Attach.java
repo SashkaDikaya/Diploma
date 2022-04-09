@@ -46,8 +46,6 @@ public class Attach {
                 + "' type='video/mp4'></video></body></html>";
     }
 
-
-
     public static URL getVideoUrl(String sessionId) {
         CredentialConfig credentials = ConfigFactory.create(CredentialConfig.class);
         String videoUrl = credentials.videoAttachUrl() + sessionId + ".mp4";
@@ -60,7 +58,7 @@ public class Attach {
         return null;
     }
 
-    public static String getSessionId(){
+    public static String getSessionId() {
         return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
     }
 }

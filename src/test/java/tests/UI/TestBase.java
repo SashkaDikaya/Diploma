@@ -15,10 +15,10 @@ import pages.MainPage;
 import pages.SalesPage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
-import static com.codeborne.selenide.Selenide.sleep;
-import static java.lang.String.format;
 
 public class TestBase {
+
+    static CredentialConfig credentials = ConfigFactory.create(CredentialConfig.class);
 
     static Faker faker = new Faker();
     SalesPage salesPage = new SalesPage();
@@ -27,7 +27,6 @@ public class TestBase {
 
     @BeforeAll
     static void setUp() {
-        CredentialConfig credentials = ConfigFactory.create(CredentialConfig.class);
         String remoteUrl = System.getProperty("remoteUrl", credentials.remoteUrl());
         String login = System.getProperty("login", credentials.login());
         String password = System.getProperty("pass", credentials.password());
