@@ -1,7 +1,9 @@
 package tests.UI;
 
 import com.codeborne.pdftest.PDF;
+import config.CredentialConfig;
 import io.qameta.allure.AllureId;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -16,6 +18,8 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Tests extends TestBase {
+
+    CredentialConfig credentials = ConfigFactory.create(CredentialConfig.class);
 
     final String
             phrase = "QA Automation",
