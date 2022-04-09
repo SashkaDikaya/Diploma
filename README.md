@@ -99,23 +99,23 @@ test
 
 ### :lobster: Дашборд
 <p align="center">
-<img title="Allure Graphics" src="images/screens/Allure_TO.png">
+<img title="Allure Graphics" src="images/screens/AllureTO.png">
 </p>
 
 ### :broken_heart: Тест-кейсы
 <p align="center">
-<img title="Allure Graphics" src="images/screens/Allure_TO2.png">
+<img title="Allure Graphics" src="images/screens/AllureTO2.png">
 </p>
 
 ### :japanese_goblin: Запуски
 <p align="center">
-<img title="Allure Graphics" src="images/screens/Allure_TO3.png">
+<img title="Allure Graphics" src="images/screens/AllureTO3.png">
 </p>
 
 ## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/Telegram.png" >
+<img title="Allure Overview Dashboard" src="images/screens/Telegram1.png" >
 </p>
 
 
