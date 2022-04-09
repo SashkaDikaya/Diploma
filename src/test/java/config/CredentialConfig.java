@@ -15,4 +15,5 @@ public interface  CredentialConfig extends Config {
     String careersUrl();
     String mainPageUrl();
     String salesPageUrl();
+    String videoAttachUrl();
 }
