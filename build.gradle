@@ -3,7 +3,7 @@ plugins {
     id "io.qameta.allure" version "2.9.6"
 }
 
-repositories{
+repositories {
     mavenCentral()
 }
 
@@ -30,7 +30,7 @@ allure {
     }
 }
 
-dependencies{
+dependencies {
     testImplementation(
             "commons-io:commons-io:2.11.0",
             'com.codeborne:pdf-test:1.7.0',
@@ -56,6 +56,16 @@ tasks.withType(JavaCompile) {
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform()
+
+    if (System.getProperty("threads") != null) {
+        systemProperties += [
+                'junit.jupiter.execution.parallel.enabled'                 : true,
+                'junit.jupiter.execution.parallel.mode.default'            : 'concurrent',
+                'junit.jupiter.execution.parallel.mode.classes.default'    : 'concurrent',
+                'junit.jupiter.execution.parallel.config.strategy'         : 'fixed',
+                'junit.jupiter.execution.parallel.config.fixed.parallelism': System.getProperty("threads").toInteger()
+        ]
+    }
 
     testLogging {
         lifecycle {
