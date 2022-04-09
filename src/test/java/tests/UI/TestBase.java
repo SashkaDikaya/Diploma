@@ -35,11 +35,9 @@ public class TestBase {
         String version = System.getProperty("version", credentials.version());
         String size = System.getProperty("size", credentials.size());
 
-        //Configuration.baseUrl = "https://demoqa.com";
-
         String url = "https://" + login + ":" + password + "@" + remoteUrl;
         Configuration.remote = url;
-        Configuration.browser = browser;
+        //Configuration.browser = browser;
         Configuration.browserVersion = version;
         Configuration.browserSize = size;
 
