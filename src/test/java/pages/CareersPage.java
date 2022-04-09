@@ -1,13 +1,16 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+import config.CredentialConfig;
 import io.qameta.allure.Step;
+import org.aeonbits.owner.ConfigFactory;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class CareersPage {
+public class CareersPage  {
+    CredentialConfig credentials = ConfigFactory.create(CredentialConfig.class);
 
     SelenideElement
             countrySelector = $x("//div[@class='dropdown nav-item']//a[@id='site-switcher']"),
@@ -17,7 +20,7 @@ public class CareersPage {
 
     @Step("Выбор страны {0}")
     public CareersPage selectCountry(String country) {
-        open("https://careers.veeam.ru/");
+        open(credentials.careersUrl());
         countrySelector.click();
         countryDDList.$(withText(country)).click();
         return this;

@@ -12,4 +12,7 @@ public interface  CredentialConfig extends Config {
     String browser();
     String version();
     String size();
+    String careersUrl();
+    String mainPageUrl();
+    String salesPageUrl();
 }
