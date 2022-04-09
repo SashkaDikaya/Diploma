@@ -9,4 +9,7 @@ public interface  CredentialConfig extends Config {
     String login();
     String password();
     String remoteUrl();
+    String browser();
+    String version();
+    String size();
 }

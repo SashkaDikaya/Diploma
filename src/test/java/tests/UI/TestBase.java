@@ -27,17 +27,15 @@ public class TestBase {
 
     @BeforeAll
     static void setUp() {
-        CredentialConfig credentials =
-                ConfigFactory.create(CredentialConfig.class);
-        String browser = System.getProperty("browser", "chrome");
-        String version = System.getProperty("version", "100");
-        String size = System.getProperty("size", "1920x1080");
-        //String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
+        CredentialConfig credentials = ConfigFactory.create(CredentialConfig.class);
         String remoteUrl = System.getProperty("remoteUrl", credentials.remoteUrl());
         String login = System.getProperty("login", credentials.login());
         String password = System.getProperty("pass", credentials.password());
+        String browser = System.getProperty("browser", credentials.browser());
+        String version = System.getProperty("version", credentials.version());
+        String size = System.getProperty("size", credentials.size());
 
-        Configuration.baseUrl = "https://demoqa.com";
+        //Configuration.baseUrl = "https://demoqa.com";
 
         String url = "https://" + login + ":" + password + "@" + remoteUrl;
         Configuration.remote = url;

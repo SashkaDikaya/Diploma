@@ -40,7 +40,7 @@ public class Tests extends TestBase {
                 .checkVacancy(phrase);
     }
 
-    @Test
+    /*@Test
     @AllureId("8175")
     @DisplayName("Смена языка с русского на " + language)
     void changeLanguageTest() {
@@ -91,5 +91,5 @@ public class Tests extends TestBase {
 
             assertThat(parsed.title).contains("Veeam", "Biocad");
         });
-    }
+    }*/
 }
